@@ -1,0 +1,116 @@
+.petshop-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3em;
+}
+
+.product {
+  margin: 2em;
+  padding: 2em;
+  border: 1px solid #a3a36d;
+  border-radius: 5em;
+
+  height: 75vh;
+}
+.product img {
+  width: 35%;
+}
+.product p {
+  text-align: center;
+  width: 15em;
+  margin-left: 2em;
+}
+.card-button button {
+  border-radius: 5em;
+  background-color: rgb(246 242 241);
+  box-shadow: 0 0.7em 2em 0 rgba(188, 221, 127, 0.4);
+  color: #a3a36d;
+  border: 1px solid #a3a36d;
+  font-weight: bold;
+  padding: 1em 5.4em;
+  margin-top: 2em;
+  cursor: pointer;
+
+  text-align: center;
+}
+.cart-continer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #a3a36d;
+  margin: 2em;
+  color: #a3a36d;
+}
+.btnCart {
+  padding: 1em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.productName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3em;
+}
+.productId {
+  display: flex;
+}
+.productPrie {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.cart-checkout {
+  border-radius: 5em;
+  background-color: rgb(246 242 241);
+  box-shadow: 0 0.7em 2em 0 rgba(188, 221, 127, 0.4);
+  color: #a3a36d;
+  border: 1px solid #a3a36d;
+  font-weight: bold;
+  padding: 1em 5.4em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  text-align: center;
+}
+.addRemove {
+  color: #a3a36d;
+  border: 1px solid #a3a36d;
+  width: 1.5em;
+  height: 1.5em;
+}
+.checkoutprice {
+  padding: 1em;
+  margin: 1em;
+}
+.checkoutTax {
+  padding: 1em;
+  margin: 1em;
+}
+.checkoutshipping {
+  padding: 1em;
+  margin: 1em;
+}
+.total {
+  padding: 1em;
+  margin: 1em;
+}
+.input-code label {
+  margin: 1em;
+  padding: 1em;
+}
+@media screen and (max-width: 769px) {
+  .petshop-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 3em;
+    width: 100%;
+  }
+  .product p {
+    text-align: center;
+    width: 10em;
+  }
+}

@@ -1,0 +1,101 @@
+#container {
+  margin: 20vh auto 10%;
+  text-align: center;
+  background-color: rgb(246 242 241);
+  color: #a3a36d;
+
+  padding: 2em;
+  width: 50%;
+  border: rgb(140, 150, 56) 1px dashed;
+}
+
+.inputs,
+.phonenumber {
+  background-color: #f6f6f6;
+  border: none;
+  color: rgb(60, 70, 43);
+  padding: 1em 2.2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1em;
+  margin: 0.3em;
+  width: 85%;
+  border: 0.3em solid #a3a36d;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 0.3em;
+}
+.inputs:focus {
+  background-color: #fcfce1;
+}
+
+.regSubmit {
+  background-color: rgb(246 242 241);
+
+  color: #a3a36d;
+  border: 1px solid #a3a36d;
+  font-weight: bold;
+  padding: 1em 5.4em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-family: "Times New Roman", Times, serif;
+
+  box-shadow: 0 0.7em 2em 0 rgba(188, 221, 127, 0.4);
+
+  border-radius: 0.3em;
+  margin: 2em 1.3em 1em 1.3em;
+}
+
+.regSubmit:hover {
+  background-color: #ccccb9;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 2000ms;
+}
+.account {
+  margin-top: 0.5em;
+  color: #a3a36d;
+}
+.account a {
+  text-decoration: none;
+  color: #6b6b42;
+}
+
+@media screen and (max-width: 1300px) {
+  #container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 780px) {
+  #container {
+    width: 60%;
+  }
+  .forReg .inputs {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #container {
+    width: 60%;
+  }
+  .regSubmit {
+    width: 7em;
+    padding: 0.3em;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .regSubmit {
+    width: 9em;
+    height: 3em;
+    padding: 0em;
+    font-size: 0.8em;
+  }
+  .inputs,
+  .phonenumber {
+    font-size: 0.7em;
+  }
+}

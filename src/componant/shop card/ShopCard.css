@@ -1,0 +1,89 @@
+.shopNowContiner {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "title title title title"
+    "image image Tarea Tarea"
+    "image image Tarea Tarea"
+    "image image Tarea Tarea"
+    "image image Tarea Tarea"
+    "image image Tarea Tarea"
+    "image image Tarea Tarea"
+    "image image Tarea Tarea"
+    "image image Tarea Tarea";
+}
+.shopTitle {
+  color: #a3a36d;
+  margin-top: 2em;
+  grid-area: title;
+}
+.shopnowImg {
+  margin-top: 2em;
+  grid-area: image;
+}
+.shopnowImg img {
+  width: 45em;
+  height: 25em;
+  margin-left: 1em;
+  border-radius: 5em;
+}
+.shopnow-text {
+  margin-top: 2em;
+  margin-right: 1em;
+  width: 45em;
+  height: 25em;
+  background-color: #ffd44dbd;
+  border-radius: 5em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10em;
+  grid-area: Tarea;
+}
+.shopnow-text P {
+  color: black;
+  text-align: center;
+  font-size: 2em;
+}
+.shopnow-text button {
+  border-radius: 5em;
+  background-color: rgb(246 242 241);
+  box-shadow: 0 0.7em 2em 0 rgba(188, 221, 127, 0.4);
+  color: #a3a36d;
+  border: 1px solid #a3a36d;
+  font-weight: bold;
+  padding: 1em 5.4em;
+  text-align: center;
+}
+.shopnow-text button:hover {
+  background-color: #f1f1db;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 2000ms;
+}
+@media screen and (max-width: 769px) {
+  .shopNowContiner {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "image image"
+      "image image"
+      "image image"
+      "image image"
+      "Tarea Tarea"
+      "Tarea Tarea"
+      "Tarea Tarea"
+      "Tarea Tarea";
+  }
+  .shopnowImg img {
+    width: 15em;
+  }
+
+  .shopnow-text {
+    width: 17em;
+    margin-left: 3em;
+    padding: 1em;
+  }
+}

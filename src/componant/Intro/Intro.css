@@ -1,0 +1,21 @@
+.Intro-text {
+  background-image: url("../../../public/new_hero_image_01.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+.Intro-text p {
+  width: 10em;
+  color: #ffd03d;
+  font-size: 2em;
+
+  padding: 1em;
+}
+
+@media screen and (max-width: 986px) {
+  .Intro-text p {
+    padding: 0.3em;
+    font-size: 1.5em;
+  }
+}

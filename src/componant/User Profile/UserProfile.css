@@ -1,0 +1,100 @@
+.User-Profile-continer {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "title title title title title"
+    "userForm userForm userForm petForm petForm"
+    "userForm userForm userForm petForm petForm"
+    "userForm userForm userForm petForm petForm"
+    "userForm userForm userForm petForm petForm"
+    "userForm userForm userForm petForm petForm"
+    "userForm userForm userForm petForm petForm"
+    "userForm userForm userForm petForm petForm"
+    "userForm userForm userForm petForm petForm";
+
+  gap: 2em;
+}
+.useTitle {
+  color: #a3a36d;
+  margin-top: 1em;
+  grid-area: title;
+}
+.user-form {
+  text-align: center;
+  margin: 2em;
+  grid-area: userForm;
+  border: #a3a36d 1px dashed;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+.pet-form {
+  margin: 2em;
+  grid-area: petForm;
+  border: #a3a36d 1px dashed;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+.user-inputs .pet-inputs {
+  background-color: #f6f6f6;
+  border: none;
+  color: rgb(70, 43, 65);
+  padding: 1em 2.2em;
+  text-align: center;
+
+  display: flex;
+  justify-self: center;
+  font-size: 1.1em;
+  margin: 0.3em;
+  width: 85%;
+  border: 0.3em solid #a3a36d;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 0.3em;
+}
+.Info {
+  background-color: rgb(246 242 241);
+  border: none;
+  color: #a3a36d;
+  border: 1px solid #a3a36d;
+  font-weight: bold;
+  padding: 1em 5.4em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-family: "Times New Roman", Times, serif;
+
+  box-shadow: 0 0.7em 2em 0 rgba(188, 221, 127, 0.4);
+
+  border-radius: 0.3em;
+  margin: auto auto;
+}
+@media screen and (max-width: 769px) {
+  .User-Profile-continer {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "title title "
+      "userForm userForm"
+      "userForm userForm"
+      "userForm userForm"
+      "userForm userForm"
+      "userForm userForm"
+      "userForm userForm"
+      "userForm userForm"
+      "userForm userForm"
+      "petForm petForm"
+      "petForm petForm"
+      "petForm petForm"
+      "petForm petForm"
+      "petForm petForm"
+      "petForm petForm"
+      "petForm petForm"
+      "petForm petForm";
+
+    gap: 2em;
+  }
+  .Info {
+    margin-left: 4.5em;
+  }
+}

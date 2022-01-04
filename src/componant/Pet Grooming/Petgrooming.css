@@ -1,0 +1,50 @@
+.formBooking {
+  margin: auto auto;
+  text-align: center;
+  background-color: rgb(246 242 241);
+  color: #a3a36d;
+
+  padding: 2em;
+  width: 70%;
+  border: rgb(140, 150, 56) 1px dashed;
+}
+#bookingTitle {
+  color: #a3a36d;
+}
+.offline a {
+  text-decoration: none;
+  color: #58583c;
+}
+.fileds {
+  background-color: #f6f6f6;
+  border: none;
+  color: rgb(70, 43, 65);
+  padding: 1em 2.2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1em;
+  margin: 0.3em;
+  width: 85%;
+  border: 0.3em solid #a3a36d;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 0.3em;
+}
+.fileds :focus {
+  background-color: #fcfce1;
+}
+@media only screen and (max-width: 650px) {
+  .formBooking {
+    width: 70%;
+  }
+  .regSubmit {
+    width: 9em;
+    height: 3em;
+    padding: 0em;
+    font-size: 0.8em;
+  }
+  .fileds {
+    width: 60%;
+    font-size: 0.7em;
+  }
+}

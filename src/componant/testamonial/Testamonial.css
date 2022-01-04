@@ -1,0 +1,42 @@
+.tContiner {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.tContiner h1 {
+  margin-top: 3em;
+  /* text-align: center; */
+  color: #a3a36d;
+}
+.slider {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider img {
+  width: 25em;
+  height: 25em;
+}
+
+.rightArrow,
+.leftArrow {
+  font-size: 3em;
+  color: #a3a36d;
+  cursor: pointer;
+  /* user-select: none; */
+}
+@media screen and (max-width: 767px) {
+  .rightArrow,
+  .leftArrow {
+    font-size: 3em;
+  }
+  .slider img {
+    width: 15em;
+    height: 15em;
+  }
+  .tContiner {
+    margin-top: 10em;
+  }
+}
